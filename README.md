@@ -1,13 +1,13 @@
 # SCN Project Wizard
 
-Aplikacja webowa typu multi-step form dla marki premium SCN Group pod CTA **„Rozpocznij projekt”**.
+Aplikacja webowa typu multi-step form dla marki premium (wersja logic-first, bez brandingu końcowego).
 
 ## Stack
 
 - Next.js 14 (App Router)
 - React 18 + TypeScript
 - Tailwind CSS
-- Framer Motion (animacje przejść)
+- Framer Motion
 
 ## Uruchomienie
 
@@ -16,15 +16,10 @@ npm install
 npm run dev
 ```
 
-Aplikacja będzie dostępna pod `http://localhost:3000`.
+## Co zawiera
 
-## Funkcje
-
-- 6-krokowy wizard zgodny z procesem usług SCN Group
-- progress bar z numerem kroku
-- animacje przejścia między krokami
-- mobile-first, responsywny layout
-- walidacja formularza kontaktowego
-- zebranie odpowiedzi do pojedynczego JSON i wysyłka `POST /api/submit`
-- gotowe miejsce pod webhook / CRM / email API
-- ekran sukcesu po wysłaniu
+- pełnoekranowy, responsywny wizard (mobile + desktop)
+- 5 kroków: 4 kroki kwalifikacji + formularz kontaktowy
+- progress bar i animacje przejść między krokami
+- walidacja formularza (w tym reguły warunkowe)
+- mock submit z sukcesem bez backendu
